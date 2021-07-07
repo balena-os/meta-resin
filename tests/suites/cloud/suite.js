@@ -135,6 +135,8 @@ module.exports = {
       version: this.suite.options.balenaOS.download.version,
     });
 
+    await this.context.get().os.readOsRelease();
+
     // get config.json for application
     let config = await this.context
       .get()
@@ -177,6 +179,7 @@ module.exports = {
     this.log(`Device uuid should be ${this.context.get().balena.uuid}`)
     this.log("Preloading image...");
     await this.context.get().os.configure();
+    console.log(this.context.get().os.image.path)
     await this.context.get().cli.preload(this.context.get().os.image.path, {
       app: this.context.get().balena.application,
       commit: initialCommit,
