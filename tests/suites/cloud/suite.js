@@ -12,6 +12,23 @@ const { join } = require("path");
 const { homedir } = require("os");
 const { exec } = require("mz/child_process");
 
+async function getJournalLogs(that){
+  // there may be quite a lot in the persistant logs, so we want to check if there's any persistant logs first in /var/logs/journal
+  let logs = ""
+  try{
+    logs = await that.context.get().worker.executeCommandInHostOS(
+    `journalctl -a --no-pager`,
+    that.context.get().link
+    )
+  }catch(e){
+    that.log(`Couldn't retrieve journal logs with error ${e}`)
+  }
+
+  const logPath = "/tmp/journal.log";
+  fse.writeFileSync(logPath, logs);
+  await that.archiver.add(logPath);
+} 
+
 module.exports = {
   title: "Managed BalenaOS release suite",
   run: async function () {
@@ -130,10 +147,7 @@ module.exports = {
     });
 
     // unpack OS
-    await this.context.get().os.fetch({
-      type: this.suite.options.balenaOS.download.type,
-      version: this.suite.options.balenaOS.download.version,
-    });
+    await this.context.get().os.fetch();
 
     await this.context.get().os.readOsRelease();
 
@@ -168,8 +182,6 @@ module.exports = {
 
     // Teardown the worker when the tests end
     this.suite.teardown.register(() => {
-      this.log("Removing image");
-      fse.unlinkSync("/data/image"); // Delete the unpacked an modified image from the testbot cache to prevent use in the next suite
       this.log("Worker teardown");
       return this.context.get().worker.teardown();
     });
@@ -190,7 +202,12 @@ module.exports = {
     await this.context
       .get()
       .worker.network(this.suite.options.balenaOS.network);
-    
+
+    this.suite.teardown.register(async() => {
+      this.log("Retreiving journal logs...");
+      await getJournalLogs(this)
+    })
+  
     await this.context.get().worker.off();
     await this.context.get().worker.flash(this.context.get().os.image.path);
     await this.context.get().worker.on();
