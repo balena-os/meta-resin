@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.82.6
+## (2021-07-15)
+
+* mobyinit: Set GOPATH not to use Go's ${USER}/go default [Alex Gonzalez]
+
 # v2.82.5
 ## (2021-07-15)
 
