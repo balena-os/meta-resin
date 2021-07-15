@@ -1,4 +1,18 @@
 - commits:
+    - subject: 'mobyinit: Set GOPATH not to use Go''s ${USER}/go default'
+      hash: bd6ed79918421fe2bcedb7b1d0bd18437d839493
+      body: |
+        Fixes #2176
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.82.6
+  date: 2021-07-15T11:21:52.850Z
+- commits:
     - subject: 'kernel-headers-test: Update base image to buster'
       hash: 57f6aee369e8ec4ab8b20ae82a03f8b8fd7aebe4
       body: |
