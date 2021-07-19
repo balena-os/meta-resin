@@ -1,6 +1,99 @@
 Change log
 -----------
 
+# v2.83.0
+## (2021-07-19)
+
+* Replace image variants with development mode [Alex Gonzalez]
+* u-boot: Introduce a compile time osdev-image feature [Alex Gonzalez]
+* os-release: Remove image variants information [Alex Gonzalez]
+* Replace DEVELOPMENT_IMAGE and image variants with OS_DEVELOPMENT [Alex Gonzalez]
+* images: Remove debug-tweaks settings. [Alex Gonzalez]
+* openssh: Enable runtime development configuration [Alex Gonzalez]
+* balena-info: Rename from resin-info [Alex Gonzalez]
+* balena: Enable debugging socket on development mode [Alex Gonzalez]
+* image-balena: Allow passwordless root logins [Alex Gonzalez]
+* image_balena: Remove "balena" hostname from development images [Alex Gonzalez]
+* systemd: Runtime enablement of serial console [Alex Gonzalez]
+* development-features: Add service for development features runtime management [Alex Gonzalez]
+
+# v2.82.8
+## (2021-07-16)
+
+* kernel-devsrc: Add upstream recipe from hardknott-3.3.1 for dunfell [Florin Sarbu]
+
+# v2.82.7
+## (2021-07-15)
+
+
+<details>
+<summary> Update balena-engine to v19.03.23 [Leandro Motta Barros] </summary>
+
+> ## balena-engine-19.03.23
+> ### (2021-07-12)
+> 
+> * Make layer download resuming more resilient [Leandro Motta Barros]
+> 
+> ## balena-engine-19.03.22
+> ### (2021-06-30)
+> 
+> * Drop CODEOWNERS [Robert Günzler]
+> 
+> ## balena-engine-19.03.21
+> ### (2021-06-25)
+> 
+> * Lock destination layers while delta is being processed [Robert Günzler]
+> 
+> ## balena-engine-19.03.20
+> ### (2021-06-17)
+> 
+> * pkg/storagemigration: poperly handle errors during state creation [Robert Günzler]
+> 
+> ## balena-engine-19.03.19
+> ### (2021-06-10)
+> 
+> * pkg/storagemigration: allow writing logs to separate file [Robert Günzler]
+> * storagemigration: defer commit to next start [Robert Günzler]
+> 
+</details>
+
+# v2.82.6
+## (2021-07-15)
+
+* dnsmasq: Restart when config.json changes [Kyle Harding]
+* balena-config-vars: Restart target when config.json changes [Kyle Harding]
+* balena-config-vars: Add config-json.target service [Kyle Harding]
+* balena-config-vars: Restore null as valid for dnsServers [Kyle Harding]
+
+# v2.82.5
+## (2021-07-15)
+
+* kernel-headers-test: Update base image to buster [Florin Sarbu]
+
+# v2.82.4
+## (2021-07-14)
+
+* tests: Add hup test suite [Robert Günzler]
+
+# v2.82.3
+## (2021-07-13)
+
+* Check that the hostapp image fits the inactive partion on HUP [Alex Gonzalez]
+* image-balena: Add check for docker image size [Alex Gonzalez]
+* balena-image: Break down the rootfs image size calculation [Alex Gonzalez]
+* image_types_balena: Add rootfs size calculation function [Alex Gonzalez]
+
+# v2.82.2
+## (2021-07-13)
+
+* Update balena-supervisor from v12.8.8 to v12.9.3 [Miguel Casqueira]
+
+# v2.82.1
+## (2021-07-12)
+
+* balena-hostname: add comments and improve logging [Mark Corbin]
+* meta-balena: rename resin-hostname to balena-hostname [Mark Corbin]
+
 # v2.82.0
 ## (2021-07-10)
 
