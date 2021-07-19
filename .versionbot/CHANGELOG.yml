@@ -1,4 +1,47 @@
 - commits:
+    - subject: update suite
+      hash: 183a7e822308405d017d86cb5a3c4d8a711b3206
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: rcooke-warwick
+      nested: []
+    - subject: add os release read
+      hash: c53a54a4a9874b030980cf18d5ee3f850cdc0472
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: rcooke-warwick
+      nested: []
+    - subject: speed up tests
+      hash: a7aebc32e5f1514930237a263dd631741b3267a5
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: rcooke-warwick
+      nested: []
+    - subject: 'add more testlodge tests, that involve cloud'
+      hash: 1e17684ae3d5efe4ca2633467d1cea4141e11169
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: rcooke-warwick
+      nested: []
+  version: 2.82.10
+  date: 2021-07-19T16:02:59.091Z
+- commits:
     - subject: 'patch: Make OS test suite compatible with current helpers'
       hash: 5a7dd196686836bd35a95f3f2c5dadf138b2590f
       body: ''
