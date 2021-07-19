@@ -1,6 +1,14 @@
 Change log
 -----------
 
+# v2.82.10
+## (2021-07-19)
+
+* update suite [rcooke-warwick]
+* add os release read [rcooke-warwick]
+* speed up tests [rcooke-warwick]
+* add more testlodge tests, that involve cloud [rcooke-warwick]
+
 # v2.82.9
 ## (2021-07-16)
 
