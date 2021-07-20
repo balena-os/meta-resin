@@ -1,4 +1,28 @@
 - commits:
+    - subject: 'balena-os: pin linux-firmware to 20210511 from hardknott'
+      hash: 78549b1d7f781096eb790cc1fa44e8f3f9c585c5
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+    - subject: 'linux-firmware: upgrade 20190815 -> 20210511'
+      hash: 615a73b4a2753b4badf607c7d0d353ecfca17b90
+      body: |
+        Add recipe from poky hardknott, revision 74dbb08
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.82.10
+  date: 2021-07-20T22:45:07.323Z
+- commits:
     - subject: 'patch: Make OS test suite compatible with current helpers'
       hash: 5a7dd196686836bd35a95f3f2c5dadf138b2590f
       body: ''
