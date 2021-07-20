@@ -1,4 +1,60 @@
 - commits:
+    - subject: 'tests: Remove journalctl line limit from hup suite'
+      hash: de21797b991a9d1ae125f852bec9a6024f0ff014
+      body: |
+        Having the lines limited to 500 meant we were missing
+        a lot of logs.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: 'tests: Enable rollback tests in hup suite'
+      hash: 74e661bb3b452807c94d6786b0fcb9a9fb4daf52
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: 'tests: Update smoke test conditions'
+      hash: d4ff5874aec2009737845f5225ad8cce7dc032a7
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: 'tests: Add rollback tests to HUP suite'
+      hash: e8347d9055a16d8124a0d429925d0453b73d658f
+      body: |
+        Adding rollback-health check & rollback-altboot check to the HUP suite
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: 'rollback-altboot: Fix minor typo in log message'
+      hash: 1fa90ac20457d0b4b4afe65c6b799b9b86612029
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.82.10
+  date: 2021-07-20T19:13:13.065Z
+- commits:
     - subject: 'patch: Make OS test suite compatible with current helpers'
       hash: 5a7dd196686836bd35a95f3f2c5dadf138b2590f
       body: ''
