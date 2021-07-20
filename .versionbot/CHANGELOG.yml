@@ -1,4 +1,65 @@
 - commits:
+    - subject: 'resindataexpander: expand data part to max usable size on MBR'
+      hash: 6daa96e0f339344c4b1ff7a3ab7280be7c046f39
+      body: |
+        MBR formatted disks are only capable of 32-bit addressing of sectors,
+        limiting disk usage to 2 TB. In cases where the full disk cannot be
+        utilized, expand the data partition to fill the usable space, and print
+        a message.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+    - subject: 'resindataexpander: reformat spaces -> tabs'
+      hash: 934cd42be4e90364f7bc3ab87dc5f7413f59db3d
+      body: |
+        Reformat to use tabs instead of spaces, according to the following vim
+        config:
+
+        :set filetype=sh noexpandtab shiftwidth=4 tabstop=4 autoindent
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+    - subject: 'resindataexpander: fix SC2069 on line 37'
+      hash: d4b0b210951b8ac8c64b38a64750263693110bf2
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+    - subject: 'resindataexpander: fix SC2086 on line 37'
+      hash: 09776af99eacfcc9c9cd100544ade6e2b2c5d1ab
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+    - subject: 'resindataexpander: fix SC2046 on line 6'
+      hash: 1687c615dfd73b353fe27ede82e9d60573bdab6a
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.82.10
+  date: 2021-07-20T15:50:26.867Z
+- commits:
     - subject: 'patch: Make OS test suite compatible with current helpers'
       hash: 5a7dd196686836bd35a95f3f2c5dadf138b2590f
       body: ''
