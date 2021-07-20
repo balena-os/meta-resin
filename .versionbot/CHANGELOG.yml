@@ -1,4 +1,21 @@
 - commits:
+    - subject: Package iwlwifi-QuZ-a0-hr-b0 firmware separately
+      hash: 0da7f37bab4e229f58199ea3d0b89d7a55fdb843
+      body: |
+        We add this fw on its own package so that boards can add it to
+        rootfs (for Intel NUC 11th generation more specifically)
+      footer:
+        Changelog-entry: Package iwlwifi-QuZ-a0-hr-b0 firmware separately
+        changelog-entry: Package iwlwifi-QuZ-a0-hr-b0 firmware separately
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.82.10
+  date: 2021-07-20T12:53:51.259Z
+- commits:
     - subject: 'patch: Make OS test suite compatible with current helpers'
       hash: 5a7dd196686836bd35a95f3f2c5dadf138b2590f
       body: ''
